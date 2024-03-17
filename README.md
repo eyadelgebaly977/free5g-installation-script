@@ -8,4 +8,6 @@ $ git clone https://github.com/eyadelgebaly977/free5g-installation-script.git
 
 $ cd free5g-installation-script
 
+$ sudo chmod 777 free5gc.sh
+
 $ sudo bash free5gc.sh

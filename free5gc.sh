@@ -1,9 +1,7 @@
 #!/bin/bash
-sudo rm -rf /usr/local/go
+rm -rf /usr/local/go
 wget https://dl.google.com/go/go1.18.10.linux-amd64.tar.gz
-sudo tar -C /usr/local -zxvf go1.18.10.linux-amd64.tar.gz
-wget https://dl.google.com/go/go1.18.10.linux-amd64.tar.gz
-sudo tar -C /usr/local -zxvf go1.18.10.linux-amd64.tar.gz
+tar -C /usr/local -zxvf go1.18.10.linux-amd64.tar.gz
 mkdir -p ~/go/{bin,pkg,src}
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export GOROOT=/usr/local/go' >> ~/.bashrc

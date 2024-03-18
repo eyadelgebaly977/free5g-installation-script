@@ -27,6 +27,9 @@ git submodule update --init --jobs `nproc`
 git submodule foreach git checkout main
 git submodule foreach git pull --jobs `nproc`
 cd ~/free5gc
+export PATH=$PATH:/usr/local/go/bin
+source ~/.profile
+export PATH=$PATH:/usr/local/go/bin
 make
 echo "All installed............Time to Test"
 echo "All installed............Time to Test"
@@ -35,6 +38,7 @@ echo "All installed............Time to Test"
 echo "All installed............Time to Test"
 echo "All installed............Time to Test"
 echo "All installed............Time to Test"
+cd
 git clone -b v0.8.5 https://github.com/free5gc/gtp5g.git
 cd gtp5g
 make
@@ -61,6 +65,6 @@ echo "Time to open webconsole............."
 echo "Time to open webconsole............."
 echo "Time to open webconsole............."
 echo "Time to open webconsole............."
+cd ~/free5gc
 cd webconcole
 go run server.go
-
